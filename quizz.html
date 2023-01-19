@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Quizz IoT</title>
+</head>
+<body>
+    <header>
+        <h1> Quizz IoT</h1>
+        <p> Realizar tu Autoevaluación</p>
+    </header>
+    <div class="container">
+        <section id="p0">
+            <h3> 1 - ¿Qué es el Internet of Things?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">Es el proceso que permite conectar los elementos físicos cotidianos al Internet.
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">Internet de las cosas. 
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">Es la nube donde se encuentra la información.
+            </label>
+            <label>
+                <input type="radio" value="4" name="p0" onclick="respuesta(0,this)">Es donde se almacena la informacion del internet para utilizarlo en dispositivos tecnológicos.
+            </label>
+        </section>
+        <section id="p1">
+            <h3> 2 - ¿Cómo es el funcionamiento del IoT?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Es la manera que se realiza cambios en la web para ejecutar una función.
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Realiza movimientos dentro de Intertet para la interfaz del usuario.
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Es el sistemas de dispositivos físicos que reciben y transfieren datos a través de las redes inalámbricas.
+            </label>
+            <label>
+                <input type="radio" value="4" name="p1" onclick="respuesta(1,this)">Acciones que puede ejecutarse automaticamente sin la necesidad de un humano
+            </label>
+        </section>
+        <section id="p2">
+            <h3> 3 - ¿Cómo puedes administrar el IoT? </h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">En dispositivos inteligentes.
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">En aplicaciones.
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Envidando y recibiendo datos de forma inalámbrica.
+            </label>
+            <label>
+                <input type="radio" value="4" name="p2" onclick="respuesta(2,this)">En una base de datos.
+            </label>
+        </section>
+
+        <button onclick="corregir()">CORREGIR</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
