@@ -6,3 +6,13 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 } 
+
+
+document.getElementById("open-nav").addEventListener("mouseover",(ev)=>{
+    console.log("Mouse encima")
+    ev.currentTarget.style.cursor = "pointer";
+});
+document.getElementById("ante_icon").addEventListener("mouseover",(ev)=>{
+    console.log("Mouse encima")
+    ev.currentTarget.style.cursor = "pointer";
+});

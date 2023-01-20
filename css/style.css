@@ -10089,6 +10089,8 @@ h3 {
   background-color: #FF6600;
 }
 
+
+
 .podcast-cont {
   margin-left: 10%;
   margin-top: 5%;
@@ -10116,4 +10118,20 @@ audio {
 .slides-container {
   margin-top: 25px;
   box-shadow: 5px 5px 15px #000;
+}
+
+.tema-container {
+  background-color: var(--blue-apple);
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+#ante_icon {
+  transition: all .2s ease-in-out;
+}
+
+#ante_icon:hover {
+  transform: scale(1.5);
 }
