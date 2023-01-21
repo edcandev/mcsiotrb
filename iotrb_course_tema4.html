@@ -76,9 +76,9 @@
                         </p>
                     </div>
                 </div>
-                <div id="open-nav" style="width: 90%; display: flex; justify-content: ; font-size: 1.75em; margin-bottom: 0pc !important; align-self: center;" onclick="openNav()">Antecedentes Necesarios
+                <div id="open_nav"">Antecedentes Necesarios
                 </div>
-                <img id="ante_icon" src="assets/imgs/iot/ante_icono.png" style="width: 75px;" onclick="openNav()">
+                <img id="ante_icon" src="assets/imgs/iot/ante_icono.png" style="width: 75px;">
             </div>
         </div>
 
@@ -138,23 +138,55 @@
                 <h2 class="list-title">Creando y Dockerizando la WebApp</h2>
             </div>
         </div>
+        <div class="d-flex width-100 justify-content-around font-size-1-5em">
+            <a class="tema-container" href="iotrb_course_tema3.html">Tema Anterior</a>
+            <a class="tema-container" href="#" disabled>Tema Siguiente</a>
+        </div>
 <!-- Contenido por video -->
     <div class="container m-auto m-0 pt-5">
 
-        <div class="d-flex width-100 justify-content-around font-size-1-5em">
-            <a href="iotrb_course_tema3.html">Tema Anterior</a>
-            <a href="#" disabled>Tema Siguiente</a>
-        </div>
 
         <div class="vid video-content vid10 width-100">
-            <h2 class="mb-3 text-center"></h2>
+            <h2 class="mb-3 text-center">RECURSOS VIDEO 10</h2>
+            <div class="width-100">
+                <h4>Pasos a seguir</h4>
+                <p>Una vez hayamos podido capturar los datos del sensor a la Raspberry Pi, lo siguiente es envialos hacia Azure, para esto, crearemos un recurso del tipo "Azure IoT Hub".</p>
+                <img id="vid11_img01" class="w-60 mb-4" src="assets/slides/vid10/MCS_IOTRB_vid10_sli01.jpg">
+                <p id="vid11_p02" class="float-right text-justify w-40 pl-4">
+                    Seleccionaremos la opción: "Gratuita". Este nivel, nos permite traabajar con 8,000 mensajes el día, suficientes para el desarrollo del proyecto.<br>
+                    Una vez terminada la implementación del recurso, nos dirigimos al mismo y buscamos la sección dispositivos. Dentro, selecionaremos: "Agregar DIspositivo"l. Cuando creemos un dispositivo es importante marcar la opción: "Conectar dispositivo a un Centro de IoT."<br>
+                    Una vez dentro del dispositivo, debemos ubicar la Cadena de Conexión Principal, se tratade una cadena de caracteres cifrada que utilizaremos para vincular los datos de un dispositivo IoT a una instancia de dispositivo en Azure IoT Hub.<br>
+                    Luego de conseguir nuestra cadena de conexión, el paso siguiente es exportarla a nuestra Raspberry Pi como una variable de entorno.
+                </p>
+                <p>Para exportar una variable de entorno a nuestra Raspberry Pi, podemos utilizar el siguiente comando:</p>
+                <code class="text-trans-none width-100 d-block text-center font-weight-bolder mb-3">export IOT_HUB_DEVICE_CONN_STRING="&#60cadena_de_conexión>"</code>
+                <p>Donde la cadena de conexión es la que hemos copiado anteriormente, se escribe dentro de las comillas.</p>
+                <p>Una vez exportada, podemos comenzar a descargar las nuevas dependencias necesarias para el desarrollo del proyecto. Utilizaremos los siguientes comandos:
+                </p>
+                <h6>DEPENDENCIAS NECESARIAS UTILIZANDO PYTHON</h6>
+                <code class="text-trans-none width-100 d-block text-center font-weight-bolder mb-3">pip install azure-iot-device</code>
+                <code class="text-trans-none width-100 d-block text-center font-weight-bolder mb-3">pip install azure-iot-hub</code>
+                <h6>DEPENDENCIAS NECESARIAS UTILIZANDO .NET</h6>
+                <code class="text-trans-none width-100 d-block text-center font-weight-bolder mb-3">dotnet add package Microsoft.Azure.Device.Client --version 1.41.3</code>                
+                <p>Para sustituir los códigos anteoriores por los nuevos, podemos descargar los archivos nuevos:</p>
+                <div class="d-flex w-100 justify-content-around mb-4">
+                    <a class="w-40 text-center tema-container" href="assets/code_examples/sensor.py" download>
+                        Código para Python
+                    </a>
+                    <a class="w-40 text-center tema-container" href="assets/code_examples/sensor" download>
+                        Código para .NET
+                    </a>
+                </div>
+                <p>Luego de sustituir el código y ejecutar los códigos programas, podemos ver que los datos son enviados de manera satisfactoria. </p>
+                <img style="display: block; margin: auto;" src="assets/slides/vid10/MCS_IOTRB_vid10_sli03.jpg">
+            </div>
         </div>
 
         <div class="vid video-content vid11 width-100 display-none">
             <h2 class="mb-3 text-center"></h2>
         </div>
 
-    </div>
+    </div> 
     <footer>
     </footer>
 </body>

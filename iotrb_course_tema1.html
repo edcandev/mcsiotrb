@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="iot mycloudschool cursos" name="keywords">
     <meta content="Internet" name="description">
-    <link rel="icon" href="img/favicon.png">    <!-- Favicon -->
+    <link rel="icon" href="assets/imgs/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"><!-- Font Awesome -->
@@ -17,10 +17,9 @@
     <script defer src="js/video_content.js"></script>
     <script defer src="js/sidenav.js"></script>
 </head>
-</head>
 
 <body>
-	<!-- Topbar Start -->
+	<!-- Inicia el Header -->
 	<header class="container-fluid d-none d-lg-block">
         <div class="row align-items-center py-4 px-xl-5">
 			<div class="col-lg-3">
@@ -58,8 +57,7 @@
             </div>
         </div>
     </header>
-    <!-- Topbar End -->
-
+    <!--  Termina el Header -->
 
     <div class="container m-auto m-0">
     <!-- About Start -->
@@ -76,14 +74,15 @@
                         </p>
                     </div>
                 </div>
-                <div id="open-nav" style="width: 90%; display: flex; justify-content: ; font-size: 1.75em; margin-bottom: 0pc !important; align-self: center;" onclick="openNav()">Antecedentes Necesarios
-                </div>
-                <img id="ante_icon" src="assets/imgs/iot/ante_icono.png" style="width: 75px;" onclick="openNav()">
+                <div id="open_nav">Antecedentes Necesarios</div>
+                <img id="ante_icon" src="assets/imgs/iot/ante_icono.png" style="width: 75px;">
             </div>
         </div>
 
-        <div id="mySidenav" class="sidenav">
-            <div class="ml-3 d-inline-block">
+        <!-- Side Drawer-->
+
+            <div id="mySidenav" class="sidenav">
+                <div class="ml-3 d-inline-block">
                 <h4 class="d-inline" style="width: 65%; color:rgb(255, 255, 255); font-weight: bolder; font-size: 1.75em;
                     ">ANTECEDENTES</h4>
                 <a style="width: 25%; color:#FFF;"" href="javascript:void(0)" id="close-nav" onclick="closeNav()">&#215</a>
@@ -134,7 +133,6 @@
             </div>
 
         </div>
-
     <!-- About End -->
         <div class="main-video-container">
             <video src="videos/MCS_IOTRB_vid01.mp4" controls poster="assets/slides/vid01/MCS_IOTRB_vid01_sli01.jpg" preload="auto" class="main-video"></video>
@@ -155,14 +153,14 @@
 		        <h2 class="list-title">Servicios de IoT en Microsoft Azure</h2>
             </div>
         </div>
-
-<!-- Contenido por video -->
-    <div class="container m-auto m-0">
         
         <div class="d-flex width-100 justify-content-around font-size-1-5em">
-            <a class="tema-container d-inline-block width-20 " href="#">Tema Anterior</a>
-            <a class="tema-container d-inline-block width-20 " href="iotrb_course_tema2.html">Tema Siguiente</a>
+            <a class="tema-container" href="#">Tema Anterior</a>
+            <a class="tema-container" href="iotrb_course_tema2.html">Tema Siguiente</a>
         </div>
+<!-- Contenido por video -->
+<div class="container m-auto m-0">
+        
         <div class="vid video-content vid01 width-100"> <!-- Contenido Video 1 -->
             <h2 class="mb-3 text-center">RECURSOS VIDEO 1</h2>
             <div> <!-- Presentación No. 1-->

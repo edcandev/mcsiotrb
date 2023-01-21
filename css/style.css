@@ -1855,6 +1855,15 @@ pre code {
   .table-responsive-lg > .table-bordered {
     border: 0;
   }
+
+  #vid11_img01 {
+    width: 100% !important;
+  }
+  #vid11_p02 {
+    width: 100% !important;
+    padding: 1em 0 !important;
+
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -7523,9 +7532,17 @@ button.bg-dark:focus {
 .w-25 {
   width: 25% !important;
 }
-
+.w-30 {
+  width: 30% !important;
+}
+.w-40 {
+  width: 40% !important;
+}
 .w-50 {
   width: 50% !important;
+}
+.w-60 {
+  width: 60% !important;
 }
 
 .w-75 {
@@ -7550,6 +7567,10 @@ button.bg-dark:focus {
 
 .h-75 {
   height: 75% !important;
+}
+
+.w-70 {
+  width: 70% !important;
 }
 
 .h-100 {
@@ -9531,7 +9552,8 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #FF6600 ;
+  color: var(--orange-apple);
+  /*color: #FF6600 ;*/
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10012,10 +10034,12 @@ h6,
 
 .previous-slide {
   background-color: #007bff;
+  transition: .4s
 }
 
 .next-slide {
   background-color: #FF9800;
+  transition: .4s;
 }
 
 .previous-slide:hover {
@@ -10051,7 +10075,7 @@ h3 {
 
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 0px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -10076,7 +10100,7 @@ h3 {
   background-color: #EE5500;
 }
 
-#open-nav {
+#open_nav {
   background-color: #444444;
   color:#FFF;
   font-weight: bold;
@@ -10084,8 +10108,12 @@ h3 {
   padding: 10px;
   text-decoration: none;
   transition: .4s;
+  width: 90%;
+  display: flex; font-size: 1.75em;
+  margin-bottom: 0pc !important;
+  align-self: center;
 }
-#open-nav:hover {
+#open_nav:hover {
   background-color: #FF6600;
 }
 
@@ -10125,7 +10153,14 @@ audio {
   text-align: center;
   padding: 5px;
   border-radius: 10px;
-
+  width: 25%;
+  text-decoration: none;
+  color: #FFF;
+  transition: .4s;
+}
+.tema-container:hover {
+  text-decoration: none;
+  background-color: var(--orange-apple);
 }
 
 #ante_icon {
@@ -10133,5 +10168,24 @@ audio {
 }
 
 #ante_icon:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
+}
+
+.bg-blue-apple {
+  background-color: var(--blue-apple);
+}
+.bg-purple-apple {
+  background-color: var(--purple-apple);
+}
+.bg-yellow-apple {
+  background-color: var(--yellow-apple);
+}
+.bg-orange-apple {
+  background-color: var(--orange-apple);
+}
+.bg-red-apple {
+  background-color: var(--red-apple);
+}
+.bg-green-apple {
+  background-color: var(--green-apple);
 }
