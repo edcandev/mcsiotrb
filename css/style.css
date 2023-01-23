@@ -10195,3 +10195,9 @@ audio {
 .bg-green-apple {
   background-color: var(--green-apple);
 }
+.enlace:visited {
+  color: #F78200;
+}
+.enlace:hover {
+  color: #009CDF;
+}
