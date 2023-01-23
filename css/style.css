@@ -9,7 +9,9 @@
   --blue-apple: #009CDF;
   --green-apple: #5EBD3E;
   --yellow-apple: #FFB900;
+  --yellow-apple: rgb(255, 185, 0);
   --orange-apple: #F78200;
+  --orange-apple-alpha: rgba(247, 132, 0);
   --red-apple: #E23838;
   --purple-apple: #973999;
   --blue: #007bff;
@@ -9986,8 +9988,8 @@ h6,
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
   background: linear-gradient(rgba(68, 66, 90, 0), #44425a);
+  justify-content: flex-end;
   z-index: 1;
 }
 
@@ -10080,11 +10082,13 @@ h3 {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: var(--orange-apple); /* Black*/
+/*  */
+  background: rgba(255, 185, 0, 0.9); /* Black*/
+  background: rgba(247, 132, 69, 0.9);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px; /* Place content 60px from the top */
   transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
-  box-shadow: 5px 0px 10px #444;
+  box-shadow: 0px 0px 5px #444;
 }
 
 #close-nav {
@@ -10126,7 +10130,9 @@ h3 {
   flex-direction: column;
   width: max-content;
   padding:15px;
-  background-color: var(--yellow-apple);
+  /*--orange-apple-alpha: rgba(247, 132, 0);*/
+  background: rgba(255, 185, 0, 0.7); /* Black*/
+  background: rgba(247, 132, 69, 0.9);
   border-radius: 10px;
   color: #000;
 }
