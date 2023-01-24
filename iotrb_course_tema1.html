@@ -13,6 +13,7 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/video-panel.css" rel="stylesheet" >
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet" type="text/css">
     <script defer src="js/video_panel.js"></script>
     <script defer src="js/video_content.js"></script>
     <script defer src="js/sidenav.js"></script>
@@ -65,6 +66,15 @@
 
     <div class="container m-auto m-0">
     <!-- About Start -->
+    <div id="popup" class="overlay">
+        <div id="popupBody">
+            <h2>BMP280</h2>
+            <a id="cerrar" href="#">&times;</a>
+            <div class="popupContent">
+                <P>El sensor BMP280 es un sensor de presión y temperatura atmosférica digital. Utiliza un chip de alta precisión que puede medir la presión absoluta y la temperatura en un rango de -40 a 85 grados Celsius. El BMP280 es un reemplazo directo del BMP085 y BMP183, y es más preciso y consume menos energía que sus predecesores. También tiene un rango de medición de presión más amplio que los sensores anteriores. Puede ser utilizado en aplicaciones como el monitoreo meteorológico, la medición de la altitud, y el seguimiento de la calidad del aire.</P>               
+            </div>
+        </div>
+    </div>
         <div class="container-fluid pt-4">
             <div class="container py-0 m-0">
                 <div class="row align-items-center">
@@ -74,7 +84,7 @@
                             <h1>Estación Climatológica con Raspberry Pi y Azure IoT Hub</h1> 
                         </div>
                         <p class="text-justify">En este curso, se explicarán desde cero los fundamentos del Internet de las Cosas (IoT). Abarcaremos conceptos básicos, definiciones y se explicará el funcionamiento de estas tecnologías.</p>
-                        <p class="text-justify">Además, los expositores presentarán un ejemplo práctico sobre el funcionamiento del IoT, donde fabricarán una estación climatológica utilizando el sensor de presión barométrica <a class="enlace" href="#">BMP280</a>, la mini computadora <a class="enlace" href="#">Raspberry Pi 3</a> y el servicio en la nube <a class="enlace" href="#">Azure IoT Hub</a>, para monitorear los datos entrantes, que serán capturados utilizando <a class="enlace" href="#">Python3</a> y la plataforma de desarrollo <a class="enlace" href="#">.NET.</a> Finalmente, utilizando <a class="enlace" href="#">Node.js</a> y <a class="enlace" href="#">Docker</a>, desarrollarán una WebApp donde podremos ver los cambios de temperatura en tiempo real.
+                        <p class="text-justify">Además, los expositores presentarán un ejemplo práctico sobre el funcionamiento del IoT, donde fabricarán una estación climatológica utilizando el sensor de presión barométrica <a class="enlace" href="#popup">BMP280</a>, la mini computadora <a class="enlace" href="#">Raspberry Pi 3</a> y el servicio en la nube <a class="enlace" href="#">Azure IoT Hub</a>, para monitorear los datos entrantes, que serán capturados utilizando <a class="enlace" href="#">Python3</a> y la plataforma de desarrollo <a class="enlace" href="#">.NET.</a> Finalmente, utilizando <a class="enlace" href="#">Node.js</a> y <a class="enlace" href="#">Docker</a>, desarrollarán una WebApp donde podremos ver los cambios de temperatura en tiempo real.
                         </p>
                     </div>
                 </div>
