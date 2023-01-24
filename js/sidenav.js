@@ -1,10 +1,12 @@
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "400px";
-
+    document.querySelector(".blur_screen").style.width = "100vw";
 }/* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0px";
+    document.querySelector(".blur_screen").style.width = "0px";
+
 } 
 
 document.getElementById("open_nav").addEventListener("click",(ev)=>{
@@ -47,3 +49,4 @@ document.querySelectorAll(".slide-button").forEach((button)=>{
         ev.currentTarget.style.cursor = "pointer";
     });
 });
+
