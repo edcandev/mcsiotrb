@@ -9877,8 +9877,8 @@ h6,
 }
 
 .iot-header {
-  background-color: #007bffh3;
-  /* background: linear-gradient(rgba(0, 0, 0,.8), rgba(0, 0, 0,.8)), url(../img/iot/iot-banner.jpg), no-repeat center center; */
+  background-image: url("../assets/imgs/MicrosoftTeams-image.png");
+  background: linear-gradient(rgba(0, 0, 0,.8), rgba(0, 0, 255,.1)), url("../assets/imgs/MicrosoftTeams-image.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -10034,7 +10034,7 @@ h6,
   color: #FF9800;
 }
 
-.previous-slide {
+/* .previous-slide {
   background-color: #007bff;
   transition: .4s
 }
@@ -10050,7 +10050,7 @@ h6,
 
 .next-slide:hover {
   background-color: #ac6d0f;
-}
+} */
 
 .text-lowercase  { text-transform: lowercase !important; }
 .text-uppercase  { text-transform: uppercase !important; }
@@ -10200,4 +10200,13 @@ audio {
 }
 .enlace:hover {
   color: #009CDF;
+}
+
+.arrow {
+  color: var(--blue-apple);
+  font-size: 5em;
+  transition: .2s;
+}
+.arrow:hover {
+  color: var(--orange-apple);
 }

@@ -37,10 +37,13 @@ document.getElementById("ante_icon").addEventListener("click",(ev)=>{
 
 
 document.getElementById("open_nav").addEventListener("mouseover",(ev)=>{
-    console.log("Mouse encima")
     ev.currentTarget.style.cursor = "pointer";
 });
 document.getElementById("ante_icon").addEventListener("mouseover",(ev)=>{
-    console.log("Mouse encima")
     ev.currentTarget.style.cursor = "pointer";
+});
+document.querySelectorAll(".slide-button").forEach((button)=>{
+    button.addEventListener("mouseover",(ev)=> {
+        ev.currentTarget.style.cursor = "pointer";
+    });
 });
