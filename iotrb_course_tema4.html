@@ -12,11 +12,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"><!-- Fhttps://mcsiotrb.blob.core.windows.net/assetsont Awesome -->
     <link href="lib/owlcarousel/https://mcsiotrb.blob.core.windows.net/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/video-panel.css" rel="stylesheet" >
+    <link href="css/popup.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet">
     <script defer src="js/video_panel.js"></script>
     <script defer src="js/video_content.js"></script>
     <script defer src="js/sidenav.js"></script>
     <script defer src="js/popup.js"></script>
+    <script defer src="js/popup-content.js"></script>
     <script src="https://kit.fontawesome.com/c4df7659ff.js" crossorigin="anonymous"></script>
 
 </head>
@@ -68,6 +70,20 @@
 
     <div class="container m-auto m-0">
     <!-- About Start -->
+    <div id="popup" class="overlay">
+        <div id="popupBody">
+            <div id="concept_11" class="popupContent">
+                <h2>Microsoft</h2>
+                <a id="cerrar" href="#">&times;</a>
+                <p class="text-justify">Microsoft es una compañía multinacional de tecnología con sede en Redmond, Washington, Estados Unidos. Fundada en 1975 por Bill Gates y Paul Allen, Microsoft es conocida por su sistema operativo Windows y su suite de productividad Office, así como también por sus soluciones empresariales, juegos y dispositivos. Además de estos productos, Microsoft también ofrece una amplia variedad de servicios en la nube, como Azure, Dynamics 365 y LinkedIn, y una variedad de soluciones de inteligencia artificial.</p>
+            </div>
+            <div id="concept_12" class="popupContent d-none">
+             <h2>Contenedores</h2>
+             <a id="cerrar" href="#">&times;</a>
+             <p class="text-justify">Un contenedor de Docker es una forma de aislar una aplicación de su entorno, lo que permite que la aplicación se ejecute de manera consistente en diferentes entornos. Los contenedores se crean a partir de una imagen, la cual contiene todo lo necesario para ejecutar la aplicación, incluyendo el sistema operativo, las dependencias y el código de la aplicación. Los contenedores se ejecutan en un sistema host, pero están aislados del sistema host y de otros contenedores en el mismo host. Esto permite que los desarrolladores distribuyan aplicaciones de manera eficiente, ya que no tienen que preocuparse por configurar el entorno en el que se ejecutan las aplicaciones.</p>
+            </div>
+        </div>
+    </div>
         <div class="container-fluid pt-4">
             <div class="container py-0 m-0">
                 <div class="row align-items-center">
@@ -76,7 +92,9 @@
                             <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Internet of Things</h5>
                             <h1>Estación Climatológica con Raspberry Pi y Azure IoT Hub</h1> 
                         </div>
-                        <p class="text-justify"></p>
+                        <p class="text-justify">Azure IoT Hub es un servicio de plataforma en la nube de <a id="concept_11" class="enlace" href="#popup">Microsoft</a> que permite a los desarrolladores conectar, monitorear y administrar dispositivos IoT (Internet of Things) de forma segura. Con IoT Hub, los usuarios pueden recibir y enviar mensajes a través de dispositivos conectados, así como también monitorear el estado de los dispositivos y recibir notificaciones de eventos.</p>
+                        <p class="text-justify">Docker es una plataforma de <a id="concept_12" class="enlace" href="#popup">contenedores</a> que permite a los desarrolladores empaquetar y distribuir aplicaciones de manera eficiente. Los contenedores de Docker son una forma de aislar una aplicación de su entorno, lo que permite que la aplicación se ejecute de manera consistente en diferentes entornos. Con Docker, los usuarios pueden crear imágenes de aplicaciones que se pueden usar para desplegar aplicaciones en diferentes entornos.</p>
+                        <p class="text-justify">En el contexto de IoT Hub de Azure, Docker se utiliza para crear contenedores de aplicaciones IoT que se pueden desplegar en dispositivos conectados. Esto permite a los desarrolladores crear aplicaciones IoT que se ejecutan de manera consistente en diferentes dispositivos, independientemente del sistema operativo subyacente.</p>
                     </div>
                 </div>
                 <div id="open_nav">Antecedentes Necesarios</div>

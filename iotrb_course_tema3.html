@@ -13,10 +13,11 @@
     <link href="lib/owlcarousel/https://mcsiotrb.blob.core.windows.net/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/video-panel.css" rel="stylesheet" >
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet" type="text/css">
     <script defer src="js/video_panel.js"></script>
     <script defer src="js/video_content.js"></script>
     <script defer src="js/sidenav.js"></script>
-    <script defer src="js/popup.js"></script>
+    <script defer src="js/popup-content.js"></script>
     <script src="https://kit.fontawesome.com/c4df7659ff.js" crossorigin="anonymous"></script>
 
 </head>
@@ -68,6 +69,20 @@
 
     <div class="container m-auto m-0">
     <!-- About Start -->
+    <div id="popup" class="overlay">
+        <div id="popupBody">
+            <div id="concept_9" class="popupContent">
+                <h2>SDK</h2>
+                <a id="cerrar" href="#">&times;</a>
+                <p class="text-justify">Un SDK (Software Development Kit) es un conjunto de herramientas, documentación y muestras de código que se proporciona a los desarrolladores para facilitar la creación de aplicaciones para un sistema operativo específico, plataforma o dispositivo. Los SDKs a menudo incluyen librerías, SDK de interfaz de programación de aplicaciones (API), y una interfaz de línea de comandos o un entorno de desarrollo integrado (IDE) para ayudar a los desarrolladores a crear software para una plataforma específica.</p>
+            </div>
+                    <div id="concept_10" class="popupContent d-none">
+                        <h2>Pip y NunGet</h2>
+                        <a id="cerrar" href="#">&times;</a>
+                        <p class="text-justify">Pip es un sistema de gestión de paquetes para Python que permite instalar y administrar paquetes de software escritos en Python. Con pip, los usuarios pueden buscar, descargar, instalar y actualizar paquetes de Python de forma automatizada.<p class="text-justify">NuGet es un sistema de gestión de paquetes para el framework de trabajo .NET. Es similar a pip para Python, permitiendo a los desarrolladores buscar, descargar e instalar paquetes de software desde una amplia variedad de fuentes. Los paquetes NuGet son esencialmente librerías de software que se pueden usar en proyectos de desarrollo de .NET.</p> </p>
+                    </div>
+        </div>
+    </div>
         <div class="container-fluid pt-4">
             <div class="container py-0 m-0">
                 <div class="row align-items-center">
@@ -76,7 +91,7 @@
                             <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Internet of Things</h5>
                             <h1>Estación Climatológica con Raspberry Pi y Azure IoT Hub</h1> 
                         </div>
-                        <p class="text-justify">Una vez terminadas las conexiones físicas de nuestra Raspberry, es momento de configurar nuestro entorno de desarrollo, para esto, debemos instalar y configurar nuestros <a class="enlace" href="#">SDK (Kit de Desarrollo de Software)</a>. Para desarrollar los ejemplos, utilizaremos dos plataformas: Node.js y .NET. Cada una cuenta con particularidades y técnicas de implementación diferentes, además de librerías y módulos que podremos instalar utilizando el gestor de paquetes para cada uno: <a class="enlace" href="#">Pip y NuGet</a>, respectivamente.</p>
+                        <p class="text-justify">Una vez terminadas las conexiones físicas de nuestra Raspberry, es momento de configurar nuestro entorno de desarrollo, para esto, debemos instalar y configurar nuestros <a id="concept_9" class="enlace" href="#popup">SDK (Kit de Desarrollo de Software)</a>. Para desarrollar los ejemplos, utilizaremos dos plataformas: Node.js y .NET. Cada una cuenta con particularidades y técnicas de implementación diferentes, además de librerías y módulos que podremos instalar utilizando el gestor de paquetes para cada uno: <a id="concept_10" class="enlace" href="#popup">Pip y NuGet</a>, respectivamente.</p>
                     </div>
                 </div>
                 <div id="open_nav">Antecedentes Necesarios
